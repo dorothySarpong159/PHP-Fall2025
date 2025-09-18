@@ -22,6 +22,7 @@
 		<form method ="post">
 		<input type="text" id="city-input" name="city-input" placeholder="Enter city name">
 		<button type="submit" name="submit-btn" id="get-weather-btn">Get Weather</button>
+		</form>
 	</section>
 	
 </main>
@@ -50,6 +51,7 @@ $app->showWeather($city);
 
 
 <?php
+
 
 
 
