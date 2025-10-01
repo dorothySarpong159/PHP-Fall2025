@@ -1,0 +1,229 @@
+
+:root {
+    
+    --primary: #E4002B;         
+    --primary-dark: #C00020;   
+    --text: #2C2C2C;            
+    --background: #F0F0F0;      
+    --white: #FFFFFF;
+    --border-light: #D0D0D0;
+    --focus-shadow: rgba(228, 0, 43, 0.25); 
+    --selection-bg: #FFF5F5;    
+}
+
+body {
+    font-family:sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+  align-items: center;
+  min-height: 150vh;
+}
+
+/* --- HEADER & TITLES --- */
+.header {
+    color: var(--background);
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    background-image: url(../img/image.png);
+    text-align: center;
+    font-size:1rem;
+    width: 80%;
+    border-radius:20px;
+}
+
+.main-title {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    margin: 1rem 0 0;
+    font-weight: 500;
+}
+
+/* --- CARD AND LAYOUT --- */
+.card {
+    max-width: 650px;
+    width: 95%;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: o 6px 15pxrgba(0, 0, 0, 0.2);
+    margin: 0 auto 1rem;
+    padding: 0rem;
+    flex-grow: 1;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    margin-bottom:none;
+}
+
+/* Section Headings */
+h2 {
+    color: var(--text);
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 750;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+
+.input-group {
+    margin-bottom: .5rem;
+}
+
+.input-label {
+    margin-bottom: .5rem;
+    font-weight: 550;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--border-light);
+    border-radius: 10px; 
+    box-sizing: border-box;
+    font-size: 1rem;
+
+}
+
+.input-field:focus {
+    border-color: var(--text);
+    outline: none;
+}
+
+textarea.input-field {
+    width: 80%;
+    
+}
+
+.radio-group, .checkbox-group {
+    display: block;
+}
+
+.size label, 
+.sauce label,
+.cheese label,
+.beverage label, 
+.toppings label {
+    display: flex; 
+    align-items: center; 
+    gap: 2px; 
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+    margin-bottom: none;
+    line-height: 1rem;
+}
+
+/* Hover Style */
+.size label:hover,
+.sauce label:hover,
+.cheese label:hover, 
+.beverage label:hover,
+.toppings label:hover {
+    border-color: var(--text); 
+}
+
+
+.size input[type="radio"], 
+.sauce input[type="radio"],
+.cheese input[type="radio"],
+.beverage input[type="radio"],
+.toppings input[type="checkbox"] {
+    accent-color: var(--primary); 
+    width: 1rem;
+    height: 1rem;
+    margin: 0; 
+    flex-shrink: 0; 
+    
+}
+
+
+
+
+/* --- SUBMIT BUTTON --- */
+.btn {
+    width: 100%;
+    padding: 1.3rem; 
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, box-shadow 0.3s;
+    font-weight: 900; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.submit-section {
+    margin-top: 1.5rem;
+}
+
+/* --- ALERTS --- */
+.alert {
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-left: 5px solid;
+}
+
+.success-alert {
+    background-color: #e8f5e9; 
+    color: #2e7d32;
+    border-left-color: #4CAF50;
+}
+
+.error-alert {
+    background-color: var(--selection-bg); 
+    color: var(--primary-dark);
+    border-left-color: var(--primary);
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #666;
+    background-color: var(--white);
+    border-top: 1px solid var(--border-light);
+    margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+ 
